@@ -13,18 +13,18 @@
   ```ruby
   module ShowTip
   	def ShowJoined(iName)
-  		puts "#{@name} is joined."
+  		puts "#{iName} is joined."
   	end
   end
   class AI
   	include ShowTip
   	def initialize(iName)
   		@name = iName
-  		ShowJoined(@name)
+  		ShowJoined(@name) #可以在內部使用
   	end
   end
   ai = AI.new
-  ai = AI.ShowJoined("Neo")
+  ai = AI.ShowJoined("Neo") #也可以從外部呼叫
   ```
 
 3. 請說明 class variable 和 instance variable 之間的差別
