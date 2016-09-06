@@ -16,7 +16,6 @@
   		puts "#{@name} is joined."
   	end
   end
-  ```ruby
   class AI
   	include ShowTip
   	def initialize(iName)
@@ -24,7 +23,6 @@
   		ShowJoined(@name)
   	end
   end
-  ```ruby
   ai = AI.new
   ai = AI.ShowJoined("Neo")
   ```
